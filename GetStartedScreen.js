@@ -2,9 +2,9 @@
 import React, { useRef, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Animated } from 'react-native';
 
-const GetStartedScreen = ({ navigation }) => {
-  const [isButtonPressed, setIsButtonPressed] = useState(false);
-  const buttonScaleAnim = useRef(new Animated.Value(1)).current;
+  const GetStartedScreen = ({ navigation }) => {
+    const [isButtonPressed, setIsButtonPressed] = useState(false);
+    const buttonScaleAnim = useRef(new Animated.Value(1)).current;
 
   const handleButtonPressIn = () => {
     setIsButtonPressed(true);

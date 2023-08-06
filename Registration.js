@@ -7,18 +7,15 @@ import { useNavigation } from '@react-navigation/native';
 import QRGeneratedScreen from './QRGeneratedScreen';
 //import { Ionicons } from '@expo/vector-icons';
 
-
-
-const Registration = () => {
-  const navigation =useNavigation();
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [department, setDepartment] = useState('');
-  const [college, setCollege] = useState('');
-  const [selectedEvent, setSelectedEvent] = useState('Select Event');
-  const [isEmailValid, setIsEmailValid] = useState(true);
-   const [isAllFieldsFilled, setIsAllFieldsFilled] = useState(false); 
+        const Registration = () => {
+        const navigation =useNavigation();
+        const [name, setName] = useState(''); 
+        const [email, setEmail] = useState('');
+        const [department, setDepartment] = useState('');
+        const [college, setCollege] = useState('');
+        const [selectedEvent, setSelectedEvent] = useState('Select Event');
+        const [isEmailValid, setIsEmailValid] = useState(true);
+        const [isAllFieldsFilled, setIsAllFieldsFilled] = useState(false); 
 
 
   
@@ -137,6 +134,8 @@ const Registration = () => {
         <Picker.Item label="7.Debug Buddy" value="debugbuddy" />
         <Picker.Item label="8.Apptitude Fest" value="apptitudefest" />
         <Picker.Item label="9.Miniature Fix" value="fix" />
+        <Picker.Item label="10.Invenier" value="Invenier" />
+
       </Picker>
       <TouchableOpacity onPress={handleGenerateQR} style={styles.button}>
         {/* {isAllFieldsFilled ? (
