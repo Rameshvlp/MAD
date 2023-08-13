@@ -23,8 +23,9 @@ import { View, Text, StyleSheet, TouchableOpacity, Image, Animated } from 'react
   };
 
   const handleGetStarted = () => {
-    navigation.navigate('Registration');
+    navigation.navigate('EventList');
   };
+  
 
   return (
     <View style={styles.container}>

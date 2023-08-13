@@ -68,7 +68,7 @@ import QRGeneratedScreen from './QRGeneratedScreen';
       college,
       selectedEvent,
     });
-    navigation.navigate('QRGeneratedScreen',{
+    navigation.navigate('QR Screen',{
       name,
       email,
       department,
@@ -127,14 +127,14 @@ import QRGeneratedScreen from './QRGeneratedScreen';
         <Picker.Item label="Select Any" value=""/>
         <Picker.Item label="1.Cyberfest" value="cyberfest" />
         <Picker.Item label="2.Code Ninja" value="code_ninja" />
-        <Picker.Item label="3.Nethunt" value="nethunt" />
-        <Picker.Item label="4.Code-a-thon" value="code_a_thon" />
-        <Picker.Item label="5.Chalk & Talk" value="chalk&talk" />
-        <Picker.Item label="6.Article Writing" value="articlewriting" />
-        <Picker.Item label="7.Debug Buddy" value="debugbuddy" />
-        <Picker.Item label="8.Apptitude Fest" value="apptitudefest" />
-        <Picker.Item label="9.Miniature Fix" value="fix" />
-        <Picker.Item label="10.Invenier" value="Invenier" />
+        <Picker.Item label="3.Code Sprint" value="Code Sprint" />
+        <Picker.Item label="4.NetHunt" value="NetHunt" />
+        <Picker.Item label="5.Techgig" value="Techgig" />
+        <Picker.Item label="6.Invenier" value="Invenier" />
+        <Picker.Item label="7.Flip-Flop" value="Flip-Flop" />
+        <Picker.Item label="8.CyberNerd" value="CyberNerd" />
+        <Picker.Item label="9.Artistry" value="Artistry" />
+        <Picker.Item label="10.Techiadz" value="Techiadz" />
 
       </Picker>
       <TouchableOpacity onPress={handleGenerateQR} style={styles.button}>
