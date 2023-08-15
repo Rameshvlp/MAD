@@ -6,7 +6,6 @@ const EventCard = ({ title, description }) => {
     <View style={styles.card}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.description}>{description}</Text>
-      
     </View>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
+import Mailer from 'react-native-mail';
+
 
 const QRGeneratedScreen = ({ route }) => {
   const { name, email, department, college, selectedEvent } = route.params;
@@ -20,13 +22,13 @@ const QRGeneratedScreen = ({ route }) => {
         <>
           <Image source={require('./assets/check.png')} style={styles.image} />
           <Text style={styles.title}>Successfully Registered</Text>
+
         </>
       ) : (
         <>
           <View style={styles.qrContainer}>
-            <QRCode value={dataToEncode} size={200} />
-            <Image source={require('./assets/thanks.png')} style={styles.images} />
-
+          <Text style={styles.titles}>Successfully Registered</Text>
+          <QRCode value={dataToEncode} size={200} />
           </View>
         </>
       )}
@@ -57,12 +59,18 @@ const styles = StyleSheet.create({
     height: 100,
     marginLeft:50,
     marginTop:20,
-
   },
   qrContainer: {
-    marginTop: -30,
-    marginBottom:50,
+    flex:1,
+    justifyContent:"space-around",
+    alignItems:"center",
+    maxHeight:500,
+    marginBottom:100
   },
+  titles:{
+    fontSize:20,
+    fontWeight:'bold',
+  }
 });
 
 export default QRGeneratedScreen;
