@@ -64,17 +64,23 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     backgroundColor: '#0099ff',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-  },
-  buttonPressed: {
-    transform: [{ scale: 0.9 }],
+    borderRadius: 25,
+    paddingHorizontal: 40,
+    paddingVertical: 15,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+    elevation: 8,
   },
   buttonText: {
     color: '#FFFFFF',
     fontSize: 18,
     fontWeight: 'bold',
+    letterSpacing: 1,
   },
 });
 

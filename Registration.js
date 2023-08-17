@@ -15,7 +15,7 @@ import QRGeneratedScreen from './QRGeneratedScreen';
         const [college, setCollege] = useState('');
         const [selectedEvent, setSelectedEvent] = useState('Select Event');
         const [isEmailValid, setIsEmailValid] = useState(true);
-        const [isAllFieldsFilled, setIsAllFieldsFilled] = useState(false); 
+        //const [isAllFieldsFilled, setIsAllFieldsFilled] = useState(false); 
 
 
   
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   button: {
-    backgroundColor: '#007BFF',
+    backgroundColor: '#0099ff',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,

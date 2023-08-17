@@ -136,9 +136,9 @@ const EventListScreen = ({ navigation }) => {
       padding: 16,
     },
     buttonContainer: {
-      backgroundColor: '#007BFF',
+      backgroundColor: '#0099ff',
       paddingVertical: 10,
-      paddingHorizontal: 20,
+      paddingHorizontal: 20, 
       borderRadius: 5,
       alignSelf: 'center',
       marginBottom: 16,
